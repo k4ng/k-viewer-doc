@@ -1,0 +1,36 @@
+{
+    "name": "k-viewer-doc",
+    "description": "a simple viewer document (docx, xlsx, pptx), only for doc online.",
+    "main": "k-viewer-doc.html",
+    "version": "0.0.1",
+    "authors": [
+        "Kang Cahya"
+    ],
+    "keywords": [
+        "document",
+        "viewer",
+        "document-viewer",
+        "polymer",
+        "web-components"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/k4ng/k-viewer-doc.git"
+    },
+    "homepage": "https://github.com/k4ng/k-viewer-doc",
+    "license": "MIT License",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "polymer": "Polymer/polymer#^1.1.0"
+    },
+    "devDependencies": {
+        "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
+        "web-component-tester": "^4.0.0"
+    }
+}

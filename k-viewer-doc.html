@@ -1,0 +1,63 @@
+<link rel="import" href="../polymer/polymer.html">
+        
+<!--
+@demo demo/index.html basic demo
+-->
+
+<dom-module id="k-viewer-doc">
+    <template>
+        <style>
+            .char {
+                font-family: monospace;
+                font-size: 22px;
+            }
+            .container {
+                width: 100%;
+                height: 400px;
+            }
+            .label{
+                font-family: Roboto,sans-serif;
+                background-color: #263238;
+                padding: 5px;
+                color: #fff;
+            }
+        </style>
+
+        <template is="dom-if" if="{{__ifNull(source)}}">
+            <div align="center" style="padding: 50px;">
+                <span class="char">Document not found!</span>
+            </div>
+        </template>
+
+        <template is="dom-if" if="{{__ifNotNull(source)}}">
+            <div class="label">[[label]]</div>
+            <iframe class="container" src="{{__loader}}{{source}}"></iframe>
+        </template>
+    </template>
+
+    <script>
+        Polymer({
+            is: 'k-viewer-doc',
+            properties: 
+            {
+                label: {
+                    type: String,
+                    value: null
+                },
+
+                /* ONLY URL */
+                source: {
+                    type: String,
+                    value: null
+                },
+
+                __loader: {
+                    type: String,
+                    value: 'https://view.officeapps.live.com/op/embed.aspx?src='
+                }
+            },
+            __ifNull: function(s){ return s === null; },
+            __ifNotNull: function(s){ return s !== null; }
+        });
+    </script>
+</dom-module>
