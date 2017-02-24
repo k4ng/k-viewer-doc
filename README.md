@@ -58,11 +58,11 @@ label | For set label document | null
 source | ONLY URL | null
 
 
-## Doc Sample
+## Doc support and sample
 
-- dev-builds.libreoffice.org/tmp/test.docx (Writer)
-- dev-builds.libreoffice.org/tmp/test.xlsx (Spreadsheets)
-- dev-builds.libreoffice.org/tmp/test.pptx (Presentation)
+- ```Writer``` dev-builds.libreoffice.org/tmp/test.docx
+- ```Spreadsheets``` dev-builds.libreoffice.org/tmp/test.xlsx
+- ```Presentation``` dev-builds.libreoffice.org/tmp/test.pptx
 
 
 ## Change log
