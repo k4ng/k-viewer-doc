@@ -5,7 +5,7 @@
 
 # \<k-viewer-doc\>
 
-a simple viewer document (docx, xlsx, pptx), ``` only for doc online ```.
+a simple document viewer , only for doc online. #iseng.
 
 <!--
 ```
